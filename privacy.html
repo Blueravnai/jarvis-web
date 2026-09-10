@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis — zásady ochrany soukromí</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1a1a1a; --bg:#fbfaf8; --muted:#5c5c5c; --line:#e2ded8; --accent:#2b5d8a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e6e3; --bg:#16181a; --muted:#a0a0a0; --line:#2e3236; --accent:#7fb2dd; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.02em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1.1rem; margin:2.25rem 0 .75rem; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.25rem; }
+  li { margin-bottom:.4rem; }
+  a { color:var(--accent); }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.9rem; }
+  .en { color:var(--muted); font-size:.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Zásady ochrany soukromí</h1>
+  <p class="sub">Jarvis — soukromý rodinný asistent. Platné od 10. 9. 2026.</p>
+
+  <p>Jarvis je nekomerční aplikace pro jednu domácnost. Běží na počítači
+  v domácí síti té rodiny. Neprovozuje se jako služba pro veřejnost a nemá
+  žádný centrální server, kam by se data sbírala.</p>
+
+  <h2>Jaká data se zpracovávají</h2>
+  <ul>
+    <li><strong>Události z kalendáře.</strong> Pokud uživatel propojí Google
+      Kalendář, načítají se nadcházející události, aby na ně šlo odpovídat.</li>
+    <li><strong>Konverzace s asistentem.</strong> Ukládají se lokálně, aby si
+      asistent pamatoval kontext.</li>
+    <li><strong>Přístupové tokeny.</strong> Token k propojenému účtu se ukládá
+      jako soubor na domácím počítači, přístupný jen jeho vlastníkovi.</li>
+  </ul>
+
+  <h2>Kde data jsou</h2>
+  <p>Všechno zůstává na domácím počítači. Data se neposílají na žádný server
+  provozovatele, protože žádný neexistuje. Nepoužívá se analytika, reklama ani
+  sledování. Data se nikomu neprodávají a nesdílejí.</p>
+
+  <h2>Rozsah přístupu ke Google účtu</h2>
+  <p>Aplikace žádá o přístup ke kalendáři a jeho událostem. Používá ho
+  <strong>pouze ke čtení</strong>. Nevytváří, needituje ani nemaže události.
+  Přístup nepředává dál žádné třetí straně.</p>
+
+  <h2>Zpracování dotazů</h2>
+  <p>Aby asistent uměl odpovídat, posílá text dotazu jazykovému modelu
+  provozovanému společností Anthropic. Součástí dotazu mohou být údaje
+  o událostech, kterých se dotaz týká. Nakládání s těmito daty se řídí
+  podmínkami Anthropic. Nic dalšího se ven neodesílá.</p>
+
+  <h2>Jak dlouho se data uchovávají</h2>
+  <p>Do doby, než je vlastník počítače smaže. Lokální databázi i uložený token
+  lze kdykoliv smazat, čímž zmizí i historie konverzací.</p>
+
+  <h2>Odebrání přístupu</h2>
+  <p>Propojení s Google účtem jde kdykoliv zrušit na stránce
+  <a href="https://myaccount.google.com/permissions">Přístup třetích stran</a>
+  v nastavení Google účtu. Tím aplikace okamžitě ztratí možnost číst kalendář.</p>
+
+  <h2>Kontakt</h2>
+  <p>Dotazy a žádosti k soukromí přes
+  <a href="https://github.com/Blueravnai">github.com/Blueravnai</a>.</p>
+
+  <h2 class="en">In English</h2>
+  <p class="en">Jarvis is a non-commercial assistant for a single household,
+  running on a computer inside that home's network. There is no operator-run
+  server and no central data collection. With the user's consent it reads
+  Google Calendar events, read-only, and never creates, edits or deletes
+  anything. Calendar data, conversation history and the OAuth token stay on
+  the home machine. To answer questions, query text — which may include details
+  of the events being asked about — is sent to a language model operated by
+  Anthropic and handled under Anthropic's terms; nothing else is transmitted.
+  No analytics, advertising or tracking is used, and no data is sold or shared.
+  Access can be revoked at any time under
+  <a href="https://myaccount.google.com/permissions">third-party access</a> in
+  Google Account settings. Contact:
+  <a href="https://github.com/Blueravnai">github.com/Blueravnai</a>.</p>
+
+  <footer><a href="index.html">Zpět na úvod</a></footer>
+</main>
+</body>
+</html>
