@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis — domácí asistent</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1a1a1a; --bg:#fbfaf8; --muted:#5c5c5c; --line:#e2ded8; --accent:#2b5d8a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e6e3; --bg:#16181a; --muted:#a0a0a0; --line:#2e3236; --accent:#7fb2dd; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 2rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.02em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1.15rem; margin:2.5rem 0 .75rem; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.25rem; }
+  li { margin-bottom:.4rem; }
+  a { color:var(--accent); }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.9rem; }
+  .en { color:var(--muted); font-size:.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Jarvis</h1>
+  <p class="sub">Soukromý rodinný asistent běžící na domácím počítači.</p>
+
+  <p>Jarvis je nekomerční projekt jedné domácnosti. Běží na mini PC v domácí síti
+  a pomáhá členům rodiny s běžnými věcmi, jako je přehled o kalendáři.
+  Není to veřejná služba a nedá se k němu zvenčí připojit.</p>
+
+  <h2>Co dělá</h2>
+  <ul>
+    <li>Čte nadcházející události z kalendáře a odpovídá na otázky o programu.</li>
+    <li>Pamatuje si kontext předchozích konverzací, aby se věci nemusely opakovat.</li>
+    <li>Dostupný je přes vlastní mobilní aplikaci, jen v rámci domácí sítě.</li>
+  </ul>
+
+  <h2>Přístup ke Google Kalendáři</h2>
+  <p>Pokud si uživatel propojí Google Kalendář, Jarvis z něj pouze čte.
+  Nic nevytváří, needituje ani nemaže. Přístup jde kdykoliv odebrat
+  v <a href="https://myaccount.google.com/permissions">nastavení Google účtu</a>.</p>
+
+  <h2>Soukromí</h2>
+  <p>Data zůstávají na domácím počítači a nikam se neodesílají.
+  Podrobnosti v <a href="privacy.html">zásadách ochrany soukromí</a>.</p>
+
+  <h2 class="en">In English</h2>
+  <p class="en">Jarvis is a private, non-commercial assistant for a single household,
+  running on a computer in that home's own network. It is not a public service.
+  With the user's consent it reads their Google Calendar, read-only, to answer
+  questions about upcoming events. Nothing is created, modified or deleted, and
+  no data leaves the home machine. See the
+  <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    Zdrojový kód a kontakt:
+    <a href="https://github.com/Blueravnai">github.com/Blueravnai</a>
+  </footer>
+</main>
+</body>
+</html>
